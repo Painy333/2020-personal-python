@@ -63,12 +63,12 @@ class Data:
         data = json.loads(x)
         return data[user][event]
 
-    def get_repo_event(self, repo, event):
+    def get_obj_event(self, repo, event):
         x = open("obj_event.json", "r", encoding="utf-8").read()
         data = json.loads(x)
         return data[repo][event]
 
-    def get_user_repo_event(self, user, repo, event):
+    def get_people_obj_event(self, user, repo, event):
         x = open("people_obj_event.json", "r", encoding="utf-8").read()
         data = json.loads(x)
         return data[user][repo][event]
